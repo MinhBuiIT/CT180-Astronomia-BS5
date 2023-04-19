@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<!-- Thiết kế bởi Phạm Trương Hồng Ngân-->
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thiên Văn Việt Nam</title>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/Responsive-Table.css">
+  <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body class="container">
+  <video autoplay muted loop id="bg-video">
+    <source src="./video/gfp-astro-timelapse.mp4" type="video/mp4">
+  </video>
+  <!-- Preloader, https://ihatetomatoes.net/create-custom-preloading-screen/ -->
+  <div id="loader-wrapper">
+    <div id="loader"></div>
+    <div class="loader-section section-left"></div>
+    <div class="loader-section section-right"></div>
+  </div>
+  <!-- Header -->
+  <header>
+    <nav class="navbar navbar-expand-sm navbar-light bg-transparent">
+      <div class="container-fluid">
+        <a class="navbar-brand nav-logo mx-2" href="#">
+          <img src="./images/logo.png" alt="Logo">
+          <div class="text-white text-uppercase h5">astronomia</div>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse mt-4" id="navbarNavAltMarkup">
+          <div class="navbar-nav justify-content-around w-100">
+            <a class="nav-link active " aria-current="page" href="#">
+              <div class="pb-3 px-lg-5 ps-5 text-capitalize nowrap text-white">
+                Trang chủ
+              </div>
+              <div class="w-100 bg-white h-1"></div>
+            </a>
+            <a class="nav-link" href="#">
+              <div class="pb-3 px-lg-5 text-capitalize nowrap text-white ps-5">
+                giới thiệu
+              </div>
+              <div class="w-100 bg-white h-1"></div>
+            </a>
+            <a class="nav-link" href="#">
+              <div class="pb-3 px-lg-5 text-capitalize nowrap text-white ps-5">
+                các khóa học
+              </div>
+              <div class="w-100 bg-white h-1"></div>
+            </a>
+            <a class="nav-link" href="#">
+              <div class="pb-3 px-lg-5 text-capitalize nowrap text-white ps-5">
+                Liên hệ
+              </div>
+              <div class="w-100 bg-white h-1"></div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main class="mt-3">
+    <div class="container-fluid">
+      <h5 class="h5 text-white text-capitalize">các hành tinh trong hệ mặt trời</h5>
+      <div class="row mt-3 align-items-stretch flex-sm-row flex-column">
+        <div class="col-sm-6 col-12">
+          <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active border border-1 rounded-2 border-light">
+                <img src="./images/uranus.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Sao Thiên Vương - Uranus</h5>
+                  <p class="text-light">Sao Thiên Vương được đặt theo tên của thần đảm trách bầu trời Uranus trong
+                    tiếng Hy Lạp</p>
+                </div>
+              </div>
+              <div class="carousel-item border border-1 rounded-2 border-light">
+                <img src="/images/saturn.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Sao Thổ - Saturn</h5>
+                  <p class="text-light">Sao Thổ được đặt theo tên của thần Thời gian Cronus trong tiếng Hy Lạp; Trong
+                    tiếng La Mã, Cronus
+                    nghĩa là Saturn .</p>
+                </div>
+              </div>
+              <div class="carousel-item border border-1 rounded-2 border-light">
+                <img src="/images/jupiter.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Sao Mộc - Jupiter</h5>
+                  <p class="text-light">Sao Mộc được đặt theo tên của thần Zeus trong tiếng Hy Lạp; Trong tiếng La Mã,
+                    Zeus nghĩa là
+                    Jupiter.</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+        <div class="col-sm-6 col-12">
+          <div class="row h-100 gy-3">
+            <div class="col-6" data-bs-toggle="tooltip" data-bs-placement="top" title="Sao Thủy - Mercury">
+              <div class="border border-1 rounded-2 border-light">
+                <img src="./images/mercury.png" alt="" class="img-cover">
+              </div>
+            </div>
+            <div class="col-6" data-bs-toggle="tooltip" data-bs-placement="top" title="Sao Kim - Venus">
+              <div class="border border-1 rounded-2 border-light">
+                <img src="./images/venus.png" alt="" class="img-cover">
+              </div>
+            </div>
+            <div class="col-6" data-bs-toggle="tooltip" data-bs-placement="top" title="Sao Hải Vương - Neptune">
+              <div class="border border-1 rounded-2 border-light">
+                <img src="./images/neptune.png" alt="" class="img-cover">
+              </div>
+            </div>
+            <div class="col-6" data-bs-toggle="tooltip" data-bs-placement="top" title="Sao Hỏa - Mars">
+              <div class="border border-1 rounded-2 border-light">
+                <img src="./images/mars.png" alt="" class="img-cover">
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <p class="text-light mt-3">Các khóa học sắp khai giảng (Quý khách hàng vui lòng liên hệ <span>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Văn phòng đăng ký
+          </button>
+        </span> để đăng ký)</p>
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header bg-primary">
+              <h5 class="modal-title text-white" id="exampleModalLabel">Địa Chỉ Đăng Ký Khóa Học</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body bg-success text-white">
+              Văn Phòng: Tầng 8, Tòa Nhà Universial. Số 900A đường Quang Trung, Cần Thơ
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+
+    <!-- Table -->
+    <!-- <table class="table table-striped table-mobile-responsive table-mobile-sided">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">First</th>
+          <th scope="col">Last</th>
+          <th scope="col">Handle</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>Mark</td>
+          <td>Otto</td>
+          <td>@mdo</td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>Jacob</td>
+          <td>Thornton</td>
+          <td>@fat</td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td colspan="2">Larry the Bird</td>
+          <td>@twitter</td>
+        </tr>
+      </tbody>
+    </table> -->
+    <table
+      class="table table-hover table-light table-bordered table-striped table-mobile-responsive table-mobile-sided mt-4">
+      <thead class="border-bottom-cl">
+        <tr>
+          <th scope="col">Mã Khóa Học</th>
+          <th scope="col">Khóa học</th>
+          <th scope="col">Ngày Khai Giảng</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td data-content="Mã Khóa Học">CB001</td>
+          <td data-content="Khóa học">Thiên Văn học Cơ Bản</td>
+          <td data-content="Ngày Khai Giảng">30/11/2021</td>
+        </tr>
+        <tr>
+          <td data-content="Mã Khóa Học">VT002</td>
+          <td data-content="Khóa học">Vũ Trụ Cơ Bản</td>
+          <td data-content="Ngày Khai Giảng">01/12/2021</td>
+        </tr>
+        <tr>
+          <td data-content="Mã Khóa Học">QS001</td>
+          <td data-content="Khóa học">Học Máy Và Thiên Văn Học</td>
+          <td data-content="Ngày Khai Giảng">15/12/2021</td>
+        </tr>
+      </tbody>
+    </table>
+  </main>
+  <footer class="mt-4">
+    <p class="text-white fw-normal">Copyright 2021 Bản quyền thuộc về Công ty Astronomia.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"></script>
+  <script src="./jquery/jquery-3.6.4.js"></script>
+  <script src="./js/main.js"></script>
+  <script>
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+      return new bootstrap.Tooltip(tooltipTriggerEl)
+    })
+  </script>
+</body>
+
+</html>
